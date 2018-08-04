@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi sitio web</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
+</head>
+    <body>
+        <div class="portada">
+            <header id="header" class="header contenedor">
+                <figure class="logotipo">
+                    <img src="imagenes/logo.png" width="148" height="73" alt="Juan Carlos Moya" />
+                </figure>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                        <li><a href="#contacto">Contact </a></li>
+                        <li><a href="bibliography.html">Bibliography</a> </li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="portada">
+                <div class="contenedor">
+                    <h1 class="titulo">Juan Carlos Moya</h1>
+                    <h3 class="titulo-a">Si lo sueña, existe</h3>
+                    <button class="button"> Bibliografia </button>
+                </div>
+            </section>
+        </div>
+       <section class="tabla">
+           <div class="contenedor">
+                <table>
+                        <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Anio</th>
+                                    <th>Descripcion</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Item1</td>
+                                <td>2000</td>
+                                <td>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... </td>
+                            </tr>
+                            <tr>
+                                <td>Item2</td>
+                                <td>2004</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget sapien a nisl suscipit maximus quis et tellus. Mauris condimentum volutpat ex id pharetra. Etiam tellus arcu, cursus vitae diam vel, tincidunt luctus tellus. Duis tincidunt vel odio ut hendrerit. Donec ac augue justo. Nullam pretium, elit id finibus consequat, nisi libero finibus neque, et lobortis sapien urna suscipit sapien. Vivamus a est aliquam, pulvinar enim et, lacinia magna. Curabitur sodales ex blandit iaculis aliquet.  </td>
+                            </tr>
+                            <tr>
+                                <td>Item3</td>
+                                <td>2017</td>
+                                <td>Cras in dolor et ante porta tempus. Nam efficitur sit amet tellus nec auctor. Pellentesque maximus efficitur est et tincidunt. Pellentesque orci velit, suscipit a tempus ac, ornare vitae purus. Morbi ante turpis, aliquet vitae ultricies eget, tristique quis diam. </td>
+                             </tr>
+        
+                        </tbody>
+                    </table>
+           </div>
+           
+       </section>
+           
+        <footer class="footer">
+            <div class="contenedor">
+                <div id="contacto" class="contacto">
+                    <img src="imagenes/logo.png" alt="logo" width="150"/>
+                    <a href="tel:50259269712">
+                        <strong>Telefono: </strong>
+                        <span>+(502) 5926-9712 </span>
+                    </a>
+		    
+                    <a href="mailto:juancar.moygar@gmail.com">
+                        	<strong> email: </strong>
+                        	<span>juancar.moygar@gmail.com</span>
+                    </a>
+		    
+                </div>
+                <form class="formulario">
+                    <div class="col1">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required/>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required/>
+                        <div class="perfil">
+                            <label for="junior">
+                                <input type="radio"
+                                    name="developer"
+                                    id="junior" 
+                                    checked value="junior"/>Junior
+                            </label>
+                            <label for="senior">
+                                <input type="radio" 
+                                    name="developer"
+                                    id="senior"
+                                    checked value="senior"/>Senior
+
+                            </label>
+                        </div>
+                        <div class="intereses">
+                            <label for="c#">
+                                <input type="checkbox" name="intereses" id="c#" value="c#"/>C#
+                            </label>
+                            <label for="vb">
+                                <input type="checkbox" name="intereses" id="vb" value="vb"/>Visual Basic
+                            </label>
+                            <label for="sql">
+                                <input type="checkbox" name="intereses" id="sql" value="sql"/>SQL Server
+                            </label>
+                            <label for="java">
+                                <input type="checkbox" name="intereses" id="java" value="java"/>Java
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div>
+                            <label for="comentario"><small>Comentarios</small></label>
+                            <textarea name="comentario" id="comentario" cols="32" rows="7"></textarea>
+                            <input class="button" type="submit" value="Enviar" />
+                        </div>
+                    </div>
+                    
+                        
+                    
+                </form>
+            </div>
+            
+        </footer>
+    </body>
+</html>
